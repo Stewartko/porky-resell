@@ -1,0 +1,64 @@
+#main .mainPage .display {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+  #main .mainPage .display {
+    grid-auto-flow: row;
+  }
+}
+
+#main .mainPage .display:hover .option {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+#main .mainPage .display .option {
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#main .mainPage .display .option:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+#main .mainPage .display .option img {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+#main .mainPage .display .option .text {
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#main .mainPage .display .option .text:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=main.css.map */

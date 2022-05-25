@@ -1,0 +1,41 @@
+.footer .media {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.footer .media .social {
+  text-decoration: none;
+  color: grey;
+  font-size: 2rem;
+  width: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.footer .media .social:hover {
+  font-size: 2.1rem;
+  color: #7c1e1e;
+}
+
+.footer .register {
+  margin-bottom: 1rem;
+}
+
+.footer .register .fa-registered {
+  text-decoration: none;
+  color: black;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: .7;
+}
+/*# sourceMappingURL=footer.css.map */

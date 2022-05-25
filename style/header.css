@@ -1,0 +1,95 @@
+body .header {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+body .header .logo {
+  width: 5rem;
+}
+
+body .header .name {
+  font-family: 'Roboto Flex';
+}
+
+@media (max-width: 480px) {
+  body .header .name {
+    font-size: 18px;
+  }
+}
+
+body .header .links {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-flow: column;
+  padding-right: 2.2rem;
+}
+
+@media (max-width: 400px) {
+  body .header .links {
+    grid-auto-flow: row;
+  }
+}
+
+body .header .links a {
+  text-decoration: none;
+  color: #726161;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-family: 'Roboto Flex';
+  width: 100;
+}
+
+body .header .links a:hover {
+  color: #cf1822;
+}
+
+body .header .links .popUpPanel {
+  position: relative;
+  z-index: 1;
+}
+
+body .header .links .popUpPanel:hover .popContent {
+  display: block;
+  border: none;
+}
+
+body .header .links .popUpPanel .popButton {
+  font-size: 2rem;
+}
+
+body .header .links .popUpPanel .popContent {
+  display: none;
+  position: absolute;
+  background: #ddb2b2;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+body .header .links .popUpPanel .popContent a {
+  z-index: 1;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .header .links .popUpPanel .popContent a:hover {
+  color: #9c0c0c;
+  background: #9c9c9c;
+}
+/*# sourceMappingURL=header.css.map */
