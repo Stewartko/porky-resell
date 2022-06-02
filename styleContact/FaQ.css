@@ -1,0 +1,74 @@
+body #main #faq {
+  background: rgba(224, 255, 255, 0.8);
+}
+
+body #main #faq .HFaQ {
+  font-size: 50px;
+  padding-top: 1rem;
+}
+
+body #main .FaQ {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  body #main .FaQ {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  body #main .FaQ {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  body #main .FaQ {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1900px) {
+  body #main .FaQ {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 2560px) {
+  body #main .FaQ {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+body #main .FaQ .FaQBox {
+  background: rgba(135, 206, 235, 0.8);
+  display: -ms-grid;
+  display: grid;
+  width: 70%;
+  padding: 1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body #main .FaQ .FaQBox a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+body #main .FaQ .FaQBox:hover {
+  background: rgba(135, 206, 250, 0.8);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+/*# sourceMappingURL=FaQ.css.map */

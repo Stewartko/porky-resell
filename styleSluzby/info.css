@@ -1,0 +1,60 @@
+body .info {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  body .info {
+    grid-auto-flow: column;
+  }
+}
+
+body .info .cennik {
+  font-family: Roboto Flex;
+}
+
+body .info .cennik .tbCennik {
+  border: 3px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+body .info .cennik .tbCennik tr th {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+body .info .cennik .tbCennik tr td {
+  border: 1px solid black;
+  padding: 0.2rem;
+}
+
+body .info .pracDoba .cas {
+  border: 3px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Roboto Flex;
+}
+
+@media (min-width: 425px) {
+  body .info .pracDoba .cas {
+    margin-left: 4%;
+  }
+}
+
+body .info .pracDoba .cas tr th {
+  border: 1px solid black;
+  padding: 0.85rem;
+}
+
+body .info .pracDoba .cas tr td {
+  border: 1px solid black;
+  padding: 0.7rem;
+}
+/*# sourceMappingURL=info.css.map */

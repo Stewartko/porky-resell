@@ -1,0 +1,57 @@
+body {
+    #main {
+        #faq{
+            background: rgba(224,255,255, 0.8);
+            .HFaQ {
+                font-size: 50px;
+                padding-top: 1rem;
+            }
+        } 
+        .FaQ {
+            display: grid;
+            gap: 2rem;
+            justify-items: center;
+            padding-bottom: 4rem;
+            @media(min-width: 768px){
+                grid-template-columns:repeat(2, 1fr);
+            }
+    
+            @media(min-width: 1024px){
+                grid-template-columns:repeat(3, 1fr);
+            }
+    
+            @media(min-width: 1440px){
+                grid-template-columns:repeat(4, 1fr);
+            }
+    
+            @media(min-width: 1900px){
+                grid-template-columns:repeat(5, 1fr);
+            }
+    
+            @media(min-width: 2560px){
+                grid-template-columns:repeat(6, 1fr);
+            }
+
+
+            .FaQBox{
+                background: rgba(135,206,235, 0.8);
+                display: grid;
+                width: 70%;
+                padding: 1rem;
+                transition: .5s;
+                
+
+                a {
+                    text-align: center;
+                    text-decoration: none;
+                    display: block;
+                }  
+
+            }
+            .FaQBox:hover {
+                background: rgba(135,206,250, 0.8); 
+                transform: scale(1.04);
+            }
+        }
+    }
+}
