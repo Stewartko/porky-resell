@@ -1,3 +1,86 @@
+body .ponuka .zamestnanci {
+  display: -ms-grid;
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  body .ponuka .zamestnanci {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  body .ponuka .zamestnanci {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  body .ponuka .zamestnanci {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1900px) {
+  body .ponuka .zamestnanci {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 2560px) {
+  body .ponuka .zamestnanci {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+body .ponuka .zamestnanci .zamestnanec {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+}
+
+body .ponuka .zamestnanci .zamestnanec a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-family: Roboto Flex;
+}
+
+body .ponuka .zamestnanci .zamestnanec .name {
+  font-size: 25px;
+  padding-bottom: 0.5rem;
+}
+
+body .ponuka .zamestnanci .zamestnanec .about {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.3rem;
+}
+
+body .ponuka .zamestnanci .zamestnanec .about .job {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: .7;
+}
+
+body .ponuka .zamestnanci .zamestnanec .about .popis {
+  display: block;
+  width: 19rem;
+}
+
+body .ponuka .zamestnanci .zamestnanec img {
+  width: 19rem;
+  height: 30rem;
+  border-radius: 0 30% 30% 30%;
+}
+
 body .info {
   display: -ms-grid;
   display: grid;
@@ -5,6 +88,9 @@ body .info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 2rem;
   padding: 2rem;
 }
