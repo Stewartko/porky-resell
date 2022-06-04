@@ -21,7 +21,7 @@ body .header .name {
 
 @media (max-width: 480px) {
   body .header .name {
-    font-size: 18px;
+    font-size: 23px;
   }
 }
 
@@ -33,9 +33,10 @@ body .header .links {
   padding-right: 2.2rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   body .header .links {
     grid-auto-flow: row;
+    gap: 0.5rem;
   }
 }
 

@@ -13,7 +13,7 @@ body {
         .name {
             font-family: 'Roboto Flex';
             @media(max-width: 480px){
-                font-size: 18px;
+                font-size: 23px;
             }
             
         }
@@ -23,9 +23,10 @@ body {
             gap: 1.5rem;
             grid-auto-flow: column;
             padding-right: 2.2rem;
-
-            @media(max-width: 400px){
+            
+            @media(max-width: 550px){
                 grid-auto-flow: row;
+                gap: 0.5rem;
             }
            
             a {
@@ -43,18 +44,23 @@ body {
             .popUpPanel {
                 position: relative;
                 z-index: 1;
+                
+                
                 &:hover {
                     .popContent {
                         display: block;
                         border: none;
+                        
                     }
                 }
         
                 .popButton {
                     font-size: 2rem;
+                    
                 }
         
                 .popContent {
+                    
                     display: none;
                     position: absolute;
                     background: #ddb2b2;
