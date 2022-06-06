@@ -1,0 +1,144 @@
+body #main .about {
+  display: -ms-grid;
+  display: grid;
+  gap: 3rem;
+  background: rgba(135, 206, 235, 0.4);
+}
+
+body #main .about .boss {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  padding: 1rem;
+  background: rgba(135, 206, 235, 0.1);
+}
+
+body #main .about .boss .nadpis {
+  font-family: Roboto Flex;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  body #main .about .boss .nadpis {
+    font-size: 3rem;
+  }
+  body #main .about .boss .nadpis .photos {
+    grid-auto-flow: column;
+  }
+}
+
+body #main .about .boss .photos {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 19rem;
+}
+
+@media (min-width: 768px) {
+  body #main .about .boss .photos {
+    grid-auto-flow: column;
+  }
+}
+
+body #main .about .boss .photos h1 {
+  font-family: Roboto Flex;
+  text-align: center;
+}
+
+body #main .about .boss .photos a {
+  color: #808080;
+  font-family: Roboto Flex;
+  text-decoration: none;
+}
+
+body #main .about .boss .photos .adam {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body #main .about .boss .photos .adam {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  body #main .about .boss .photos .adam img {
+    display: block;
+  }
+}
+
+body #main .about .boss .photos .simon {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body #main .about .boss .photos .simon {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  body #main .about .boss .photos .simon img {
+    display: block;
+  }
+}
+
+body #main .about .boss .photos img {
+  width: 19rem;
+  height: 33rem;
+}
+
+@media (min-width: 768px) {
+  body #main .about .boss .photos img {
+    display: none;
+  }
+}
+
+body #main .about .text {
+  background: rgba(215, 238, 247, 0.4);
+  padding: 1rem;
+}
+
+body #main .about .text a {
+  font-family: Roboto Flex;
+  text-decoration: none;
+  color: black;
+}
+
+body #main .about .text .nadpis {
+  font-family: Roboto Flex;
+}
+
+body #main .about .text .founders .nadpis {
+  font-family: Roboto Flex;
+}
+
+body #main .about .text .founders .aboutMe {
+  color: #808080;
+  width: 19rem;
+}
+
+@media (min-width: 768px) {
+  body #main .about .text .founders {
+    display: none;
+  }
+}
+
+body #main .about .text .company {
+  color: #00CED1;
+}
+
+body #main .about .text .beginning {
+  color: #48D1CC;
+}
+
+@media (min-width: 1440px) {
+  body #main .about .text {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=stylePorky.css.map */

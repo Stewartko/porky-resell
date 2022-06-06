@@ -1,0 +1,133 @@
+body {
+    #main {
+        .about {
+            display: grid;
+            gap: 3rem;
+            background: rgba(135,206,235, 0.4);
+            .boss {
+                display: grid;
+                gap: 1rem;
+                justify-items: center;
+                padding: 1rem;
+                background: rgba(135,206,235, 0.1);
+
+                .nadpis {
+                    font-family: Roboto Flex;
+                    font-size: 1.3rem;
+
+                    @media(min-width: 768px){
+                        font-size: 3rem;
+
+                        .photos {
+                            grid-auto-flow: column;
+                        }
+                    }
+                }
+                    .photos{
+                        display: grid;
+                        gap: 1rem;
+                        justify-content: center;
+                        width: 19rem;
+                        @media(min-width: 768px){
+                            grid-auto-flow: column;
+                        }
+
+
+                        h1 {
+                            font-family: Roboto Flex;
+                            text-align: center; 
+                        }
+                        
+                        a {
+                            color: #808080;
+                            font-family: Roboto Flex;
+                            text-decoration: none;
+                        }
+                        .adam {
+                            display: none;
+                            
+                            .aboutMe {
+                                
+                            }
+
+                            @media(min-width: 768px){
+                                display: block;
+                            }
+
+                            img {
+                                @media(min-width: 768px){
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        .simon {
+                            display: none;
+
+                            @media(min-width: 768px){
+                                display: block;
+                            }
+
+                            img {
+                                @media(min-width: 768px){
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        img {
+                            width: 19rem;
+                            height: 33rem;
+
+                            @media(min-width: 768px){
+                                display: none;
+                            }
+                        }
+                    }
+            }
+
+                .text {
+                    background: rgba(215, 238, 247, 0.4);
+                    padding: 1rem;
+
+                    a {
+                        font-family: Roboto Flex;
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    .nadpis {
+                        font-family: Roboto Flex;
+                    }
+
+                    .founders {
+                        .nadpis {
+                            font-family: Roboto Flex;
+                        }
+    
+                        .aboutMe {
+                            color: #808080;
+                            width: 19rem;
+                        }
+
+                        @media(min-width: 768px){
+                            display: none;
+                        }
+                    }
+
+                    .company {
+                        color: #00CED1;
+
+                    }
+
+                    .beginning {
+                        color: #48D1CC;
+                    }
+
+                    @media(min-width: 1440px){
+                        font-size: 1.5rem;
+                    }
+                }
+        }
+    }
+}
