@@ -3,14 +3,21 @@ body {
         .about {
             display: grid;
             gap: 3rem;
-            background: rgba(135,206,235, 0.4);
+
+            @media(min-width:425px){
+                background: rgba(135,206,235, 0.4);
+            }
+            
             .boss {
                 display: grid;
                 gap: 1rem;
                 justify-items: center;
                 padding: 1rem;
-                background: rgba(135,206,235, 0.1);
 
+                @media(min-width:425px){
+                    background: rgba(135,206,235, 0.1);
+                }
+                
                 .nadpis {
                     font-family: Roboto Flex;
                     font-size: 1.3rem;
@@ -87,7 +94,10 @@ body {
             }
 
                 .text {
-                    background: rgba(215, 238, 247, 0.4);
+                    @media(min-width:425px){
+                        background: rgba(215, 238, 247, 0.4);
+                    }
+                    
                     padding: 1rem;
 
                     a {
