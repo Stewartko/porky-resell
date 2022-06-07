@@ -52,7 +52,7 @@ body .products .product {
 }
 
 body .products .product img {
-  width: 20rem;
+  width: 19rem;
   -webkit-transition: .5s;
   transition: .5s;
 }

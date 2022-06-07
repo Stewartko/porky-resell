@@ -96,9 +96,10 @@ body {
                 .text {
                     @media(min-width:425px){
                         background: rgba(215, 238, 247, 0.4);
+                        padding: 1rem;
                     }
                     
-                    padding: 1rem;
+                    
 
                     a {
                         font-family: Roboto Flex;

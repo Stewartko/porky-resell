@@ -108,13 +108,10 @@ body #main .about .boss .photos img {
   }
 }
 
-body #main .about .text {
-  padding: 1rem;
-}
-
 @media (min-width: 425px) {
   body #main .about .text {
     background: rgba(215, 238, 247, 0.4);
+    padding: 1rem;
   }
 }
 
