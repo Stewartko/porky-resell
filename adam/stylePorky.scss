@@ -139,5 +139,58 @@ body {
                     }
                 }
         }
+
+        .album {
+            .head {
+                font-family: Roboto Flex;
+                font-size: 2rem;
+                text-align: center;
+            }
+            .albums {
+                display: grid;
+                justify-content: center;
+                
+
+                @media(min-width: 768px){
+                    grid-template-columns:repeat(2, 1fr);
+                    padding-left: 3rem;
+                }
+        
+                @media(min-width: 1024px){
+                    grid-template-columns:repeat(3, 1fr);
+                    padding-left: 2rem;
+                }
+        
+                @media(min-width: 1440px){
+                    grid-template-columns:repeat(4, 1fr);
+                }
+        
+                @media(min-width: 1900px){
+                    grid-template-columns:repeat(5, 1fr);
+                }
+        
+                @media(min-width: 2560px){
+                    grid-template-columns:repeat(6, 1fr);
+                }
+
+                .photo_album {
+                    display: grid;
+                    gap: 0.5rem;
+                    width: 19rem;
+    
+                    .albumName {
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 2rem;
+                        color: black;
+                    }
+                    .photo {
+                        img {
+                            width: 19rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

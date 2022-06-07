@@ -156,4 +156,73 @@ body #main .about .text .beginning {
     font-size: 1.5rem;
   }
 }
+
+body #main .album .head {
+  font-family: Roboto Flex;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body #main .album .albums {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  body #main .album .albums {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding-left: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body #main .album .albums {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  body #main .album .albums {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1900px) {
+  body #main .album .albums {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 2560px) {
+  body #main .album .albums {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+body #main .album .albums .photo_album {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.5rem;
+  width: 19rem;
+}
+
+body #main .album .albums .photo_album .albumName {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+}
+
+body #main .album .albums .photo_album .photo img {
+  width: 19rem;
+}
 /*# sourceMappingURL=stylePorky.css.map */

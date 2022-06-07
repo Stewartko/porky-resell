@@ -1,7 +1,8 @@
 body {
     #main {
         #faq{
-            background: rgba(224,255,255, 0.8);
+            background: rgb(224,255,255);
+            
             .HFaQ {
                 font-size: 50px;
                 padding-top: 1rem;
@@ -12,6 +13,7 @@ body {
             gap: 2rem;
             justify-items: center;
             padding-bottom: 4rem;
+            padding-top: 1rem;
             @media(min-width: 768px){
                 grid-template-columns:repeat(2, 1fr);
             }
@@ -34,7 +36,7 @@ body {
 
 
             .FaQBox{
-                background: rgba(135,206,235, 0.8);
+                background: rgb(135,206,235);
                 display: grid;
                 width: 70%;
                 padding: 1rem;
@@ -45,11 +47,12 @@ body {
                     text-align: center;
                     text-decoration: none;
                     display: block;
+                    background: rgba(135,206,235, 0.0);
                 }  
 
             }
             .FaQBox:hover {
-                background: rgba(135,206,250, 0.8); 
+                background: rgb(135,206,250); 
                 transform: scale(1.04);
             }
         }
